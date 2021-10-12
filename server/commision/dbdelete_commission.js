@@ -1,7 +1,7 @@
-const pool = require("../db");
+const pool = require("./db");
 
 pool.query(
-  "DELETE FROM divinegroup.login WHERE log_id = $1 RETURNING *",
+  "DELETE FROM divinegroup.commission WHERE com_id = $1 RETURNING *",
   [value],
   (err, res) => {
     if (err) {
