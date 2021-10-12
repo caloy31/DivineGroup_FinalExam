@@ -1,0 +1,25 @@
+{
+  "name": "divinegroup_finalexam",
+  "version": "1.0.0",
+  "description": "DivineGroup website idea database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caloy31/DivineGroup_FinalExam.git"
+  },
+  "keywords": [
+    "divinegroup"
+  ],
+  "author": "DivineGroup",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caloy31/DivineGroup_FinalExam/issues"
+  },
+  "homepage": "https://github.com/caloy31/DivineGroup_FinalExam#readme",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
+}
