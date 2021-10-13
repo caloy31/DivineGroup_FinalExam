@@ -6,6 +6,9 @@ const pool = new Pool({
   host: "localhost",
   port: 5432,
   database: "dapq4hp9s4gekp",
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 module.exports = pool;
