@@ -1,17 +1,8 @@
 const pool = require("../db");
 
 const sql =
-  "INSERT INTO divinegroup.service_transaction(transaction_id, client_ID, client_name, payment, emp_name, service_name, com_id, reviews) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *";
-const data = [
-  "default",
-  "default",
-  "default",
-  "default",
-  "default",
-  "default",
-  "default",
-  "default",
-];
+  "INSERT INTO divinegroup.service_transaction( client_name, payment, emp_name, service_name, com_id, reviews) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *";
+const data = ["Lance", "3000", "Carlo Castro", "Coding", "1", "Not Bad"];
 
 pool.query(sql, data, (err, res) => {
   if (err) {
