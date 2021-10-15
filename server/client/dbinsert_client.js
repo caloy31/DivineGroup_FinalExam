@@ -1,16 +1,9 @@
 const pool = require("../db");
 
 const sql =
-  "insert into divinegroup.client (client_id, client_fname, client_midname, client_Iname, email, address) values (DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT) RETURNING *";
+  "insert into divinegroup.client ( client_fname, client_midname, client_lname, email, address) values ($1,$2,$3,$4,$5) RETURNING *";
 
-const value = [
-  "Default",
-  "Default",
-  "Default",
-  "Default",
-  "Default",
-  "Default",
-];
+const value = ["Carlo", "Amarillo", "Castro", "cas@gmail.com", "Davao City"];
 
 pool.query(sql, value, (err, res) => {
   if (err) {

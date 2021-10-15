@@ -21,6 +21,7 @@
   "homepage": "https://github.com/caloy31/DivineGroup_FinalExam#readme",
   "dependencies": {
     "heroku": "^7.59.0",
+    "jshint": "^2.13.1",
     "pg": "^8.7.1"
   }
 }

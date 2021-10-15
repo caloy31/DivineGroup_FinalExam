@@ -1,4 +1,4 @@
-const pool = require("./db");
+const pool = require("../db");
 
 pool.query(
   "DELETE FROM divinegroup.service_provider WHERE emp_id = $1 RETURNING *",

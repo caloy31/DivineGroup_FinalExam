@@ -1,4 +1,4 @@
-const pool = require("./db");
+const pool = require("../db");
 
 pool.query(
   "DELETE FROM divinegroup.commission WHERE com_id = $1 RETURNING *",
